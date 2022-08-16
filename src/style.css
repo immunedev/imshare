@@ -1,0 +1,58 @@
+#root {
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+}
+
+.qd-action-buttons {
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.qd-button-group {
+  height: 36px;
+  background: #151718;
+  border-radius: 16px;
+  gap: 8px;
+  padding: 2px;
+}
+
+.qd-action-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  padding: 8px 12px;
+  color: #b3b3b3;
+  border-radius: 14px;
+}
+
+.qd-action-btn > .qd-action-btn-icon {
+  fill: #b3b3b3;
+}
+
+.qd-action-btn.active {
+  background: #212426;
+  color: #fff;
+}
+
+.qd-action-btn.active > .qd-action-btn-icon {
+  fill: #fff;
+}
+
+.qd-action-btn-icon {
+  margin-right: 8px;
+}
+/*# sourceMappingURL=style.css.map */
