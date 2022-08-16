@@ -33,6 +33,14 @@ export default function Footer(){
                 class="relative flex flex-wrap justify-center gap-8 p-8 text-sm font-bold  border-black rounded-xl"
               >
                 <a
+                  class="hover:opacity-75 inline-block sm:hidden text-white"
+                  href="/how2use"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  How to use?
+                </a>
+                <a
                   class="hover:opacity-75 text-white"
                   href="https://immune.pw"
                   target="_blank"
@@ -64,7 +72,7 @@ export default function Footer(){
 
                 <a
                   class="hover:opacity-75 text-white"
-                  href="https://github.com/immunedev"   // tu bedzie repo projektu 
+                  href="https://github.com/immunedev/imshare"   // tu bedzie repo projektu 
                   target="_blank"
                   rel="noopener noreferrer"
                 >

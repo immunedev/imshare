@@ -15,7 +15,7 @@ export default function Header(){
                   </p>
                 </div>
                 <div class="flex flex-col gap-4 mt-4 sm:flex-row sm:mt-0 sm:items-center">
-                  <button
+                  <a href="/how2use"
                     class="inline-flex invisible sm:visible items-center justify-center px-5 py-3 text-gray-300 transition border border-gray-200 rounded-lg hover:text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring"
                     type="button">
                     <span class="text-sm font-medium"> How to use? </span>
@@ -34,7 +34,7 @@ export default function Header(){
                         d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
                       />
                     </svg>
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
