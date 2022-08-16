@@ -16,7 +16,7 @@ export default function Header(){
                 </div>
                 <div class="flex flex-col gap-4 mt-4 sm:flex-row sm:mt-0 sm:items-center">
                   <button
-                    class="inline-flex items-center justify-center px-5 py-3 text-gray-300 transition border border-gray-200 rounded-lg hover:text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring"
+                    class="inline-flex invisible sm:visible items-center justify-center px-5 py-3 text-gray-300 transition border border-gray-200 rounded-lg hover:text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring"
                     type="button">
                     <span class="text-sm font-medium"> How to use? </span>
 

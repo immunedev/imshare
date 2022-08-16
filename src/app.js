@@ -7,6 +7,7 @@ import Footer from './footer';
 import Upload from './upload'
 import Download from './download';
 import MyUploads from './myUploads';
+import NotFoundPage from './notFoundPage';
 
 
 class App extends React.Component{
@@ -49,12 +50,12 @@ class App extends React.Component{
                 <Routes>
                     <Route path="/upload" element={<Upload />} />
                     <Route path="/download" element={<Download />} />
-                    <Route path="/shared" element={<MyUploads />} />
-
+                    <Route path="/shared" element={<MyUploads />} />                
                     <Route
                         path="/"
                         element={<Navigate to="/upload" replace />}
                     />
+                    <Route path="*" element={<NotFoundPage />} />
                 </Routes>
                 
                 <Footer></Footer>

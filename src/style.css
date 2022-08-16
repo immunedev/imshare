@@ -1,4 +1,4 @@
-#root {
+body {
   background-color: #000000;
   background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
 }
@@ -54,5 +54,14 @@
 
 .qd-action-btn-icon {
   margin-right: 8px;
+}
+
+.qd-notfound-img {
+  z-index: -1;
+  position: relative;
+  margin-top: -8rem;
+  margin-bottom: -6rem;
+  width: 400px;
+  height: 400px;
 }
 /*# sourceMappingURL=style.css.map */
