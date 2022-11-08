@@ -95,6 +95,9 @@ body
 .qd-questionmark-icon
     bottom: -20px    
 
+.qd-login-icon
+    right: -50px
+
 .qd-upload-header
     flex-grow: 1
     margin-top: 12px
@@ -120,8 +123,13 @@ body
     gap: 28px
 
 .qd-login-header
+    display: flex
+    flex-direction: column
+    gap: 8px
+
     margin-top: 12px
     text-align: center
+    padding: 0 20%
 
 .qd-login-form
     gap: 16px
@@ -152,14 +160,14 @@ body
         border-color: rgb(156, 163, 175)
         outline: none
 
-    &[type="submit"]
+    &[type="submit"], &.qd-input-btn
         background-color: lighten(rgb(21, 23, 24), 5%)
         border: none
 
         transition: background-color 150ms
 
         padding: 6px
-        line-height: 0
+        line-height: 125%
         
         cursor: pointer
 

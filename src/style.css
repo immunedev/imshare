@@ -121,6 +121,10 @@ body {
   bottom: -20px;
 }
 
+.qd-login-icon {
+  right: -50px;
+}
+
 .qd-upload-header {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -158,8 +162,17 @@ body {
 }
 
 .qd-login-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
   margin-top: 12px;
   text-align: center;
+  padding: 0 20%;
 }
 
 .qd-login-form {
@@ -203,21 +216,21 @@ body {
   outline: none;
 }
 
-.qd-input[type="submit"] {
+.qd-input[type="submit"], .qd-input.qd-input-btn {
   background-color: #212426;
   border: none;
   -webkit-transition: background-color 150ms;
   transition: background-color 150ms;
   padding: 6px;
-  line-height: 0;
+  line-height: 125%;
   cursor: pointer;
 }
 
-.qd-input[type="submit"]:hover {
+.qd-input[type="submit"]:hover, .qd-input.qd-input-btn:hover {
   background-color: #393e41;
 }
 
-.qd-input[type="submit"]:active {
+.qd-input[type="submit"]:active, .qd-input.qd-input-btn:active {
   background-color: #454b4e;
 }
 
