@@ -3,10 +3,6 @@ import { NavLink } from 'react-router-dom'
 import { ReactComponent as NotFoundImage } from './notfound.svg';
 
 export default class NotFoundPage extends React.Component {
-    constructor(props) {
-        super(props)
-    }
-
     render() {
         return (
             <div class="flex flex-col align-middle items-center mb-10 mt-20">
