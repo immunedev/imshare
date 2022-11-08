@@ -50,9 +50,9 @@ body
     height: 400px
 
 .qd-uploadbox
-    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+    transition-duration: 250ms
 
 .qd-upload-bg
     background-color: rgba(12, 74, 110, 0.25)
@@ -73,7 +73,7 @@ body
 
         border-radius: 2px
 
-        transition: width 150ms;
+        transition: width 150ms
 
         background-color: lighten(rgb(21, 23, 24), 5%)
 
@@ -93,7 +93,6 @@ body
 
 .qd-upload-header
     margin-top: 12px
-    flex-grow: 1
     text-align: center
 
 .qd-upload-data
@@ -102,6 +101,62 @@ body
         width: 100%
     
     margin-bottom: 8px
+
+.qd-login-btn
+    transition: opacity 150ms
+    &.active
+        opacity: 0
+
+.qd-login
+    height: 100%
+    gap: 30px
+
+.qd-login-form
+    gap: 16px
+    width: 60%
+
+.qd-input
+    border: 2px solid lighten(rgb(21, 23, 24), 5%)
+    border-radius: 6px
+    
+    background-color: rgb(21, 23, 24)
+
+    height: 28px
+    padding: 4px
+
+    caret-color: rgb(156, 163, 175)
+    color: rgb(156, 163, 175)
+
+    font-size: 12px
+    font-weight: 600
+    
+    text-align: center
+    transition: border-color 150ms
+
+    &::placeholder
+        color: transparentize(white, 0.8)
+
+    &:focus
+        border-color: rgb(156, 163, 175)
+        outline: none
+
+    &[type="submit"]
+        background-color: lighten(rgb(21, 23, 24), 5%)
+        border: none
+
+        transition: background-color 150ms
+
+        padding: 6px
+        line-height: 0
+        
+        cursor: pointer
+
+        &:hover
+            background-color: lighten(rgb(21, 23, 24), 15%)
+
+        &:active
+            background-color: lighten(rgb(21, 23, 24), 20%)
+
 
 .qd-copy-icon
     margin-left: 8px

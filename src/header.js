@@ -1,4 +1,6 @@
 import React from 'react';
+import { ReactComponent as LoginIcon } from './login.svg'
+import { NavLink } from 'react-router-dom'
 
 export default function Header(){
     return(
@@ -15,16 +17,13 @@ export default function Header(){
                   </p>
                 </div>
                 <div class="flex flex-col gap-4 mt-4 sm:flex-row sm:mt-0 sm:items-center">
-                  <a href="/login"
-                    class="inline-flex invisible sm:visible items-center justify-center px-5 py-3 text-gray-300 transition bg-zinc-900 rounded-xl hover:text-gray-50 hover:bg-zinc-800 focus:outline-none focus:ring"
+                  <NavLink to="/login"
+                    className="inline-flex items-center justify-center px-5 py-3 text-gray-300 transition bg-zinc-900 rounded-xl hover:text-gray-50 hover:bg-zinc-800 focus:outline-none focus:ring qd-login-btn"
                     type="button">
                     
-                    <svg className="qd-action-btn-icon" width="16px" height="16px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" 
-                        stroke-width="2" d="M9 3h8a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H9m6-9-4-4m4 4-4 4m4-4H5"/>
-                    </svg>
+                    <LoginIcon className="qd-action-btn-icon" width="16px" height="16px" />
                     <span class="text-sm font-medium"> Log in </span>
-                  </a>
+                  </NavLink>
                 </div>
               </div>
             </div>

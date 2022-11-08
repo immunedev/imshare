@@ -8,7 +8,7 @@ import Upload from './upload'
 import Download from './download';
 import MyUploads from './myUploads';
 import NotFoundPage from './notFoundPage';
-
+import Login from './login'
 
 class App extends React.Component{
     constructor(props){
@@ -50,7 +50,8 @@ class App extends React.Component{
                 <Routes>
                     <Route path="/upload" element={<Upload />} />
                     <Route path="/download" element={<Download />} />
-                    <Route path="/shared" element={<MyUploads />} />                
+                    <Route path="/shared" element={<MyUploads />} />     
+                    <Route path="/login" element={<Login/>} />           
                     <Route
                         path="/"
                         element={<Navigate to="/upload" replace />}

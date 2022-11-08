@@ -118,9 +118,6 @@ body {
 
 .qd-upload-header {
   margin-top: 12px;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
   text-align: center;
 }
 
@@ -133,6 +130,79 @@ body {
 
 .qd-upload-data > div {
   width: 100%;
+}
+
+.qd-login-btn {
+  -webkit-transition: opacity 150ms;
+  transition: opacity 150ms;
+}
+
+.qd-login-btn.active {
+  opacity: 0;
+}
+
+.qd-login {
+  height: 100%;
+  gap: 30px;
+}
+
+.qd-login-form {
+  gap: 16px;
+  width: 60%;
+}
+
+.qd-input {
+  border: 2px solid #212426;
+  border-radius: 6px;
+  background-color: #151718;
+  height: 28px;
+  padding: 4px;
+  caret-color: #9ca3af;
+  color: #9ca3af;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  -webkit-transition: border-color 150ms;
+  transition: border-color 150ms;
+}
+
+.qd-input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.qd-input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.qd-input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.qd-input::placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.qd-input:focus {
+  border-color: #9ca3af;
+  outline: none;
+}
+
+.qd-input[type="submit"] {
+  background-color: #212426;
+  border: none;
+  -webkit-transition: background-color 150ms;
+  transition: background-color 150ms;
+  padding: 6px;
+  line-height: 0;
+  cursor: pointer;
+}
+
+.qd-input[type="submit"]:hover {
+  background-color: #393e41;
+}
+
+.qd-input[type="submit"]:active {
+  background-color: #454b4e;
 }
 
 .qd-copy-icon {
