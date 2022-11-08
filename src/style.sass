@@ -84,6 +84,7 @@ body
     z-index: 1
 
 .qd-upload-icon
+    color: transparentize(lighten(rgb(21, 23, 24), 5%), 0.75)
     fill: transparentize(lighten(rgb(21, 23, 24), 5%), 0.75)
     position: absolute
     width: 200px
@@ -91,7 +92,11 @@ body
     right: -30px
     bottom: -40px
 
+.qd-questionmark-icon
+    bottom: -20px    
+
 .qd-upload-header
+    flex-grow: 1
     margin-top: 12px
     text-align: center
 
@@ -108,8 +113,15 @@ body
         opacity: 0
 
 .qd-login
+    position: relative
+    overflow: hidden
+    z-index: 1
     height: 100%
-    gap: 30px
+    gap: 28px
+
+.qd-login-header
+    margin-top: 12px
+    text-align: center
 
 .qd-login-form
     gap: 16px
@@ -157,6 +169,8 @@ body
         &:active
             background-color: lighten(rgb(21, 23, 24), 20%)
 
+.qd-lostpwd-alignment
+    gap: 0
 
 .qd-copy-icon
     margin-left: 8px
